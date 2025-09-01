@@ -39,7 +39,7 @@ const Register = () => {
             return
         }
 
-        axios.post(`${import.meta.env.VITE_API_BASE_URL}/auth/get-signup-otp`,
+        axios.post(`${import.meta.env.VITE_API_BASE_URL}/auth/get/signup/otp`,
             {
                 name: nameRef.current?.value,
                 DOB: dobRef.current?.value,
@@ -73,7 +73,7 @@ const Register = () => {
             console.log("Invalid email");
             return;
         }
-        axios.patch(`${import.meta.env.VITE_API_BASE_URL}/auth/verify-signup-otp`
+        axios.patch(`${import.meta.env.VITE_API_BASE_URL}/auth/verify/signup/otp`
             ,{
                 email:emailRef.current?.value,
                 otp:otpRef.current?.value
@@ -84,7 +84,7 @@ const Register = () => {
         )
         .then((response)=>{
             toast.success(response.data.message);
-            axios.get(`${import.meta.env.VITE_API_BASE_URL}/auth/get-user`,{withCredentials:true})
+            axios.get(`${import.meta.env.VITE_API_BASE_URL}/auth/get/user`,{withCredentials:true})
             .then((response)=>{
                 dispatch(setUser(response.data.data.user));
                 setLoading(false);

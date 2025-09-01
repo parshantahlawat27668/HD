@@ -27,7 +27,7 @@ const Login = () => {
             setLoading(false);
             return
         }
-        axios.patch(`${import.meta.env.VITE_API_BASE_URL}/auth/get-signin-otp`, { email: emailRef.current?.value }, { withCredentials: true })
+        axios.patch(`${import.meta.env.VITE_API_BASE_URL}/auth/get/signin/otp`, { email: emailRef.current?.value }, { withCredentials: true })
             .then((response) => {
                 toast.success(response.data.message);
                 setLoading(false);
@@ -51,10 +51,10 @@ const Login = () => {
         }
         
         console.log(emailRef.current?.value);
-        axios.patch(`${import.meta.env.VITE_API_BASE_URL}/auth/verify-signin-otp`, { email: emailRef.current?.value, otp: otpRef.current?.value }, { withCredentials: true })
+        axios.patch(`${import.meta.env.VITE_API_BASE_URL}/auth/verify/signin/otp`, { email: emailRef.current?.value, otp: otpRef.current?.value }, { withCredentials: true })
             .then((response) => {
                 toast.success(response.data.message);
-                axios.get(`${import.meta.env.VITE_API_BASE_URL}/auth/get-user`, { withCredentials: true })
+                axios.get(`${import.meta.env.VITE_API_BASE_URL}/auth/get/user`, { withCredentials: true })
                     .then((response) => {
                         dispatch(setUser(response.data.data.user));
                         setLoading(false);

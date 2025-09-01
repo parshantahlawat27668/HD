@@ -22,7 +22,7 @@ function App() {
   const navigate = useNavigate();
   useEffect(()=>{
     const fetchUser = ()=>{
-      axios.get(`${import.meta.env.VITE_API_BASE_URL}/auth/get-user`,{withCredentials:true})
+      axios.get(`${import.meta.env.VITE_API_BASE_URL}/auth/get/user`,{withCredentials:true})
       .then((response)=>{
         dispatch(setUser(response.data.data.user));
       })
