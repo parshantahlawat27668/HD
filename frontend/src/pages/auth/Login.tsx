@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { PiSpinnerBold } from 'react-icons/pi'
 import { Link, useNavigate } from 'react-router-dom';
 import { setUser } from '../../store/userSlice';

@@ -28,3 +28,4 @@ A fully scalable, secure, and user-friendly notes application built as a part of
 - **Architecture:** MVC pattern, scalable folder structure
 
 ---
+

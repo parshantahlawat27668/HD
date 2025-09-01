@@ -1,5 +1,4 @@
 import axios from 'axios'
-import React from 'react'
 import { PiSpinnerBold } from 'react-icons/pi'
 import { setUser } from '../store/userSlice'
 import { useDispatch } from 'react-redux'

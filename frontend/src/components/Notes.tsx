@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import  { useEffect } from 'react'
 import NoteLink from './NoteLink'
 import { useDispatch, useSelector } from 'react-redux'
 import type { RootState } from '../store';

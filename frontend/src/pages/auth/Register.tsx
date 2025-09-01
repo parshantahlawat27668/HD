@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { PiSpinnerBold } from "react-icons/pi";
 import { Link, useNavigate } from 'react-router-dom';
 import { setUser } from '../../store/userSlice';
@@ -91,6 +91,7 @@ const Register = () => {
                 navigate("/dashboard");  
             })
             .catch((error)=>{
+                console.log(error);
             });
         })
         .catch((error)=>{
@@ -108,7 +109,7 @@ const Register = () => {
                         HD
                     </h1>
                     <div className='p-8 flex flex-col gap-3 w-80 sm:w-100'>
-                        <div className='mb-1 flex flex-col items-center md:items-start mb-2'>
+                        <div className=' flex flex-col items-center md:items-start mb-2'>
                             <h2 className='text-2xl font-bold mb-1'>Sign up</h2>
                             <p className='text-xs'>Sign up to enjoy the feature of HD</p>
                         </div>

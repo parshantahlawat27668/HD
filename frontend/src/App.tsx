@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 
 import './App.css'
 
-import { Navigate, Route, Routes, useNavigate } from 'react-router-dom'
+import {  Route, Routes, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import Register from './pages/auth/Register';
 import Login from './pages/auth/Login';
