@@ -29,6 +29,12 @@ A fully scalable, secure, and user-friendly notes application built as a part of
 
 ---
 
+## 🌐 Live Demo
+
+Check out the live version of the app here: [HD Notes Live Demo](https://hdnotesassignment2.netlify.app)
+
+---
+
 ## 📂 Folder Structure
 
 ### Backend (/)
