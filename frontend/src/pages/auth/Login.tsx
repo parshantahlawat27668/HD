@@ -23,7 +23,7 @@ const Login = () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if (emailRef.current && !emailRegex.test(emailRef.current?.value)) {
-            console.log("Invalid email");
+            toast.error("Invalid email");
             setLoading(false);
             return
         }
@@ -46,7 +46,7 @@ const Login = () => {
 
 
         if (!emailRef.current?.value || !emailRegex.test(emailRef.current.value)) {
-            console.log("Invalid email");
+            toast.error("Invalid email");
             setLoading(false); // loading off
         }
         

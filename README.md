@@ -29,3 +29,16 @@ A fully scalable, secure, and user-friendly notes application built as a part of
 
 ---
 
+## 📂 Folder Structure
+
+### Backend (/)
+├── src │   ├── controllers      # Route handlers / business logic │   ├── db               # Database connection │   ├── middlewares      # Custom middlewares (auth, error handling, etc.) │   ├── models           # Mongoose models │   ├── routes           # Express routes │   ├── utils            # Helper functions & utilities │   ├── app.ts           # Express app configuration │   ├── constants.ts     # Application constants │   └── server.ts        # Server entry point ├── .env                 # Environment variables ├── package.json         # Backend dependencies & scripts ├── tsconfig.json        # TypeScript configuration └── README.md
+
+---
+
+### Frontend (/frontend)
+
+├── public               # Static assets ├── src │   ├── assets           # Images, icons, static files │   ├── components       # Reusable UI components │   ├── pages            # Application pages │   ├── routes           # Frontend routing │   ├── store            # Redux store & slices │   ├── App.tsx          # Root component │   ├── main.tsx         # React entry point │   ├── App.css          # Global styles │   ├── index.css        # Tailwind / base CSS │   └── vite-env.d.ts    # Vite environment types ├── .env                 # Environment variables ├── index.html           # Main HTML file ├── package.json         # Frontend dependencies & scripts ├── tsconfig.json        # TypeScript config ├── vite.config.ts       # Vite configuration └── README.md
+
+---
+
